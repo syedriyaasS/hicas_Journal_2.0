@@ -24,6 +24,9 @@ h1, h2, h3, h4, h5, h6 {
 .nav-item {
     margin-right: 20px;
 }
+.navbar .nav-item .nav-link {
+    color: #212529;
+}
 .navbar .nav-item .nav-link.active {
     border-bottom: 2px solid #379777;
     color: #379777;
@@ -32,6 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .nav-item .nav-link:hover {
     border-bottom: 2px solid #379777;
     padding-bottom: 0px;
+    color: #212529;
 }
 .nav-button {
     background-color: #379777;
@@ -57,6 +61,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Banner */
 .banner {
     background-image: linear-gradient(90deg, #379777 21%, #5ea38c 74%), url(../img/hero/h1_hero.jpg);
+    /* background-image: linear-gradient(90deg, #cfe6df 21%, #cceee3 74%), url(../img/hero/h1_hero.jpg); */
+    /* background-color: #cceee3; */
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
@@ -157,14 +163,226 @@ h1, h2, h3, h4, h5, h6 {
     height: 200px;
     padding: 20px 20px;
 }
+
+
+.about-right-card-1, .about-right-card-3 {
+    margin-bottom: 20px;
+}
+
 .about-right-card-1:hover,
 .about-right-card-2:hover,
 .about-right-card-3:hover,
 .about-right-card-4:hover {
-    
-    box-shadow: 0 10px 15px rgb(187, 231, 216);
+        box-shadow: 0 10px 15px rgb(92, 109, 104);
+        cursor: pointer;
+}
+/* Disciplines covered include */
+.disciplines-card {
+    margin: 10px 23px 28px 23px;
+    width: 350px;
+    height: 90px;
+    cursor: pointer;
+    overflow: hidden;
+    border-top-style: solid;
+    border-width: 5px 0px 0px 0px;
+    border-color: #EB6E25;
+    min-height: 123px;
+}
+.disciplines-card:hover {
+    height: 240px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 10px 15px rgb(92, 109, 104);
+    margin-bottom: 10px;
+}
+.disciplines-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+.disciplines-icon {
+    padding: 20px 0px;
+}
+.disciplines-covered-include h2 {
+    font-size: 30px;
+    color: #16161A;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.disciplines-section {
+    padding: 0px 66px;
+}
+.disciplines-card img {
+    height: 65px;
+    width: 65px;
+    margin-right: 15px;
+    object-fit: fill;
+    padding-bottom: 10px;
+}
+.disciplines-card h4 {
+    display: inline;
+    font-weight: bold;
+    color: #379777;
+}
+.learn-more {
+    text-decoration: none;
+    color: #379777;
+    font-size: medium;
+}
+.learn-more:hover {
+    color: #16161A;
+    text-decoration: underline;
+}
+/* Readership section */
+.readership {
+    margin-bottom: 80px;
+}
+.readership-container {
+    border-radius: 20px;
+    /* background-image: linear-gradient(90deg, #379777 21%, #5ea38c 74%), url(../img/hero/h1_hero.jpg); */
+    background-image: linear-gradient(90deg, #cfe6df 21%, #cceee3 74%), url(../img/hero/h1_hero.jpg);
+    padding: 40px 50px;
+}
+.readership-card {
+    border-radius: 10px;
+    margin: 10px 10px 28px 10px;
+    width: 350px;
+    height: 16rem;
+    cursor: pointer;
+    overflow: hidden;
+    min-height: 123px;
+}
+.readership h2 {
+    font-size: 30px;
+    color: #16161A;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.readership-card h4 {
+    display: inline;
+    font-weight: bold;
+    color: #379777;
+}
+.readership-card p {
+    margin-top: 10px;
+}
+.readership-icon {
+    border-radius: 50%;
+    background-color: #379777;
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.readership-icon-logo {
+    padding: 50% 0% 0% 27%;;
+}
+.readership-row-2 {
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+.readership-bottom-card-1 {
+    margin-left: auto;
+}
+.readership-bottom-card-2 {
+    margin-right: auto;
+}
+.readership-list {
+    list-style-type: none;
+}
+/* footer start */
+.footer {
+    background-color: #444444;
+    color: #ebebeb ;
+}
+.footer h4 {
+    margin-bottom: 20px;
+}
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}  
+.footer-brand {
+  margin-bottom: 20px;
+}
+.footer-brand img {
+    height: 100px;
+    width: auto;
+}
+.footer-brand-content h3 {
+    text-align: center;
+}
+.footer-brand-content p {
+    text-align: center;
+}
+.footer-reg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-reg h4, .footer-reg p {
+    text-align: center;
+}
+.footer-terms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-terms ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-terms .ul .li .a {
+    width: 100%;
+}
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-contact h4 {
+    text-align: center;
+}
+.footer-contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+@media (max-width: 575px) {
+  .footer-about {
+    margin-bottom: 40px;
+  }
+}
+.footer ul li {
+  list-style: none;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.footer-insta-logo img {
+  height: 20px;
+}
+.footer-insta-logo .footer-mail .footer-mobile .footer-certificate1 .footer-certificate2 a {
+  text-decoration: none;
+  color: #ebebeb;
+}
+ a {
+  text-decoration: none;
+  color: #ebebeb;
+}
+ a {
+  text-decoration: none;
+  color: #ebebeb;
+}
+.footer ul li a:hover {
+  color: #ebebeb;
 }
 
-.about-right-card-1, .about-right-card-3 {
-    margin-bottom: 20px;
+.copyrights {
+    display: flex;
+    justify-content: flex-end;
 }
