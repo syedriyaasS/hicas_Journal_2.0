@@ -163,8 +163,17 @@ h1, h2, h3, h4, h5, h6 {
     height: 200px;
     padding: 20px 20px;
 }
-
-
+.card {
+    border: 1px solid #379777;
+}
+.card-title {
+    display: inline;
+    font-weight: bold;
+    color: #379777;
+}
+.card-body .card-text {
+    padding-top: 20px;
+}
 .about-right-card-1, .about-right-card-3 {
     margin-bottom: 20px;
 }
@@ -293,6 +302,95 @@ h1, h2, h3, h4, h5, h6 {
 .readership-list {
     list-style-type: none;
 }
+/* Review Process */
+
+/* .review-process {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.review-process h2 {
+    font-size: 30px;
+    color: #16161A;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 25px;
+    text-align: center;    
+}
+.review-process-accordion {
+    width: 80%;
+    margin: auto;
+}
+.review-process .accordion-button:focus {
+    z-index: 3;
+    border-color: none !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-image: linear-gradient(90deg, #cfe6df 21%, #cceee3 74%), url(../img/hero/h1_hero.jpg);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+}
+.accordion-button:not(.collapsed)::after {
+    color: #379777 !important;
+}
+.accordion-item {
+    min-height: 70px;
+    margin-bottom: 20px;
+} */
+.review-process {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.review-process h2 {
+    font-size: 30px;
+    color: #16161A;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 25px;
+    text-align: center;    
+}
+.review-process-accordion {
+    width: 80%;
+    margin: auto;
+}
+.review-process .accordion-button:focus {
+    z-index: 3;
+    border-color: none !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+.review-process-accordion .accordion-item {
+    border-bottom: 1px solid #379777 !important;
+    margin-bottom: 0px;
+    background-color: transparent;
+}
+
+
+.review-process-accordion .accordion-button {
+    border: none;
+    box-shadow: none;
+    padding: 15px;
+    background-color: transparent;
+    color: #000000;
+}
+.accordion-body {
+    padding-bottom: 30px;
+}
+
+.review-process-accordion .accordion-button.collapsed {
+    color: #379777;
+    font-weight: 700 !important;
+    background-color: transparent;
+    padding-top: 20px;
+}
+.review-process-accordion .accordion-button:not(.collapsed) {
+    color: #379777;
+    font-weight: 700 !important;
+    background-color: transparent;
+    padding-top: 20px;
+}
+
 /* footer start */
 .footer {
     background-color: #444444;
