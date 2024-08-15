@@ -285,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Disciplines covered include */
 .disciplines-card {
     margin: 10px 23px 28px 23px;
-    width: 350px;
+    width: 330px;
     height: 90px;
     cursor: pointer;
     overflow: hidden;
@@ -316,7 +316,9 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 .disciplines-section {
-    padding: 0px 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .disciplines-card img {
     height: 65px;
@@ -352,7 +354,7 @@ h1, h2, h3, h4, h5, h6 {
 .readership-card {
     border-radius: 10px;
     margin: 10px 10px 28px 10px;
-    width: 350px;
+    width: 330px;
     height: 16rem;
     cursor: pointer;
     overflow: hidden;
@@ -576,8 +578,86 @@ h1, h2, h3, h4, h5, h6 {
 .footer ul li a:hover {
   color: #ebebeb;
 }
-
 .copyrights {
     display: flex;
     justify-content: flex-end;
+}
+/* ---------------------------------- */
+/* Editorial-Board page start */
+.editorial-board-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 330px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(90deg, rgba(55, 151, 119, 0.8) 21%, rgba(55, 151, 119, 0.8) 21%), url(../img/editorial_board_banner.jpg);
+}
+.editorial-board-banner-title {
+    
+}
+.editorial-board-banner-title h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+}
+.chief-editors {
+    margin-top: 30px;
+}
+.chief-editors h2 {
+    font-size: 30px;
+    color: #16161A;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.chief-editors-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.chief-editors-card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #379777 !important; 
+    width: 25rem;
+    height: 200px;
+    margin-bottom: 25px;
+}
+.chief-editors-card:hover {
+    box-shadow: 0 10px 15px rgb(92, 109, 104);
+    cursor: pointer;
+}
+.chief-card-left {
+    margin-left: 100px !important;
+}
+.chief-card-right {
+    margin-right: 100px;
+}
+.chief-editors-card img {
+    height: 200px;
+    width: auto;
+    padding: 10px 10px;
+    margin: auto;
+    border-radius: 20px;
+}
+.chief-editors-card .card-body {
+    margin: auto;
+}
+/* Editorial Board Members section */
+.editorial-members {
+    margin-top: 50px;
+}
+.editorial-members h2{
+    font-size: 30px;
+    color: #16161A;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 25px;
+    text-align: center;
 }
