@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIJOMR</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="hicas-header"></div>
+        <div class="nav-desktop">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <a class="navbar-brand" href="#">
+                            <img src="./assets/img/hijomr-logo2-cropped.png" alt="HIJOMR logo">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Adivisory Committee</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./editorial-board.html">Editorial Board</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./publication_ethics.html">Publication Ethics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Guidelines for Authors</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="" class="btn nav-button">Submit Now</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="nav-mobile">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <a class="navbar-brand" href="#">
+                            <img src="./assets/img/hijomr-logo2-cropped.png" alt="HIJOMR logo">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Adivisory Committee</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Editorial Board</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Publication Ethics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Guidelines for Authors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Submit Now</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="guidelines-banner">
+            <div class="container">
+                <div class="guidelines-banner-title">
+                    <h2>Guidelines for Authors</h2>
+                </div>
+            </div>
+        </div>
+        <section class="guidelines-format">
+            <div>
+                <h2>Paper Format</h2>
+            </div>
+            <section>
+                <div class="pdf">
+                    <embed src="./assets/files/Paper format.docx.pdf"/>
+                </div>
+                <div class="download-button">
+                    <p>Click to download <span>Paper Format</span></p>
+                    <button type="button" class="btn" onclick="downloadPDF()">Download</button>
+                </div>
+                <div class="submit">
+                    <h5>Submit Your Research paper through the mail <i class="fa-regular fa-envelope"></i> <a class="text-primary" href="mailto:hijomr@hicas.ac.in">hijomr@hicas.ac.in</a></h5>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <div id="hicas-footer"></div>
+    </footer>
+    <!-- scripts -->
+     <script>
+        function downloadPDF() {
+            const link = document.createElement('a');
+            link.href = './assets/files/Paper format.docx.pdf';
+            link.download = 'Paper format.docx.pdf'; // Set the desired filename for the downloaded file
+            link.click();
+        }
+     </script>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/footer.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
