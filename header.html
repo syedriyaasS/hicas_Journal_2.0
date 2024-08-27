@@ -22,13 +22,17 @@
             height: 90px;
             width: auto;
         }
-        .clg-logo img{
-            height: 80px;
-            width: auto;
-        }
-        .clg-title img{
-            height: 80px;
-            width: auto;
+        @media only screen and  (max-width: 770px) {
+            .clg-header-content {
+                overflow: hidden;
+            }
+            .college-header {
+                overflow-x: hidden;
+                height: 90px;
+            }
+            .clg-header-content img{
+                height: 70px;
+            }
         }
     </style>
 </head>
