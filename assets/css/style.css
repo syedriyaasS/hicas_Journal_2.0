@@ -720,7 +720,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     margin: auto;
 } */
-.profile-circle {
+.board-members-card-section .profile-circle {
     color: #ffffff;
     font-size: 22px;
     line-height: 1;
@@ -1065,7 +1065,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 270px;
+    height: 266px;
     border: 1px solid #379777;
     border-radius: 8px;
     padding: 10px 25px 10px 25px;
@@ -1079,6 +1079,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .committee-members-card-section .card .profile-section h5 {
     color: #343f52;
+    margin: 6px 0px 0px 10px;
 }
 .committee-members-card-section .card:hover {
     transform: translateY(-5px);
@@ -1088,6 +1089,29 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     margin: auto;
 } */
+.committee-members-card-section .bio {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.committee-members-card-section .bio i {
+    align-items: center;
+}
+.committee-members-card-section .bio .committee-members-caption-1 {
+    margin-left: 14px;
+}
+.committee-members-card-section .bio .committee-members-caption-2 {
+    margin-left: 12px;
+}
+.committee-members-card-section .bio .committee-members-caption-3 {
+    margin-left: 13px;
+}
+.committee-members-card-section .bio .committee-members-caption-4 {
+    margin-left: 13px;
+}
+.committee-members-card-section .bio .mail {
+    color: #379777;
+}
 .committee-members-card-section .profile-circle {
     color: #ffffff;
     font-size: 32px;
