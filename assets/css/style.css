@@ -728,11 +728,11 @@ h1, h2, h3, h4, h5, h6 {
 .board-members-card-section .card {
     width: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    height: 190px;
+    height: 215px;
     border: none;
-    padding: 25px 25px 25px 25px;
+    padding: 10px 20px 10px 20px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -744,6 +744,46 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     margin: auto;
 } */
+.board-members-card-section .card .profile-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.board-members-card-section .card .profile-section .name-bio {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 0px 10px;
+}
+.board-members-card-section .card .profile-section h5 {
+    color: #343f52;
+    font-size: large;
+}
+.board-members-card-section .card .profile-section .name-bio .designation {
+    background-color: #cfe6df;
+    color: #379777;
+    padding: 5px 5px 5px 5px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 5px;
+    width: fit-content;
+}
+.board-members-card-section .card .card-body {
+    padding: 0px;
+    margin: 0px 0px 0px 30px;
+}
+.board-members-card-section .card .card-title {
+    margin-bottom: 0px;
+}
+.board-members-card-section .last-card {
+    width: 355px;
+}
+.board-members-last-card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .board-members-card-section .profile-circle {
     color: #ffffff;
     font-size: 22px;
@@ -755,7 +795,20 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0px 0px 10px;
+    margin: 5px 10px 0px 10px;
+}
+.board-members-card-section .card .bio {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.board-members-card-section .card .bio p {
+    font-size: smaller !important;
+    color: #64676c;
+    margin-left: 14px;
+}
+.board-members-card-section .card .bio .mail {
+    color: #379777;
 }
 .bg-1 {
     background-color: #E2626B;
@@ -1078,7 +1131,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* ---------------------------- */
 .committee-members-section {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 .committee-members-card-section {
     margin-bottom: 30px;
