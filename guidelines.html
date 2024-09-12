@@ -107,24 +107,79 @@
                 <div class="pdf">
                     <embed src="./assets/files/Paper format.docx.pdf"/>
                 </div>
-                <div class="download-button">
+                <!-- <div class="download-button">
                     <p>Click to download <span>Paper Format</span></p>
-                    <button type="button" class="btn" onclick="downloadPDF()">Download</button>
-                </div>
-                <div class="submit">
-                    <h5>Submit Your Research paper through the mail <i class="fa-regular fa-envelope"></i> <a class="text-primary" href="mailto:hijomr@hicas.ac.in">hijomr@hicas.ac.in</a></h5>
+                    <button type="button" class="btn" onclick="downloadPaperFormatPDF()">Download</button>
+                </div> -->
+            </section>
+            <section class="guidelines-card-section">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Submission Documents</h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <div class="card paper-format-card" style="width: 18rem;">
+                                <img src="./assets/img/paper-format-logo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Paper Format</h5>
+                                    <p class="card-text">Click on the below button to download Paper Format.</p>
+                                    <button type="button" class="btn" onclick="downloadPaperFormatPDF()">Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <div class="card copyrights-card" style="width: 18rem;">
+                                <img src="./assets/img/copyrights-logo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Copyrights Form</h5>
+                                    <p class="card-text">Click on the below button to download Copyrights Form.</p>
+                                    <button type="button" class="btn" onclick="downloadCopyrightsFormPDF()">Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <div class="card undertaking-card" style="width: 18rem;">
+                                <img src="./assets/img/undertaking-format-logo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Undertaking Form</h5>
+                                    <p class="card-text">Click on the below button to download Undertaking Form.</p>
+                                    <button type="button" class="btn" onclick="downloadUndertakingFormPDF()">Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
+            <div class="submit mt-5">
+                <h5>Submit Your Research paper through the mail <i class="fa-regular fa-envelope"></i> <a class="text-primary" href="mailto:hijomr@hicas.ac.in">hijomr@hicas.ac.in</a></h5>
+            </div>
     </main>
     <footer>
         <div id="hicas-footer"></div>
     </footer>
     <!-- scripts -->
      <script>
-        function downloadPDF() {
+        function downloadPaperFormatPDF() {
             const link = document.createElement('a');
             link.href = './assets/files/Paper format.docx.pdf';
-            link.download = 'Paper format.docx.pdf'; // Set the desired filename for the downloaded file
+            link.download = 'Paper format.docx.pdf';
+            link.click();
+        }
+        function downloadCopyrightsFormPDF() {
+            const link = document.createElement('a');
+            link.href = './assets/files/hijomr_copyrights_form.pdf';
+            link.download = 'hijomr_copyrights_form.pdf';
+            link.click();
+        }
+        function downloadUndertakingFormPDF() {
+            const link = document.createElement('a');
+            link.href = './assets/files/hijomr_undertaking_form.pdf';
+            link.download = 'hijomr_undertaking_form.pdf';
             link.click();
         }
      </script>

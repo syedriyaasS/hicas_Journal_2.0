@@ -8,7 +8,7 @@ body {
     font-weight: normal;
     font-style: normal;
     overflow-x: hidden !important;
-    background-color: #f2f2f2
+    background-color: #f2f2f2;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Sarabun", sans-serif;
@@ -1007,6 +1007,65 @@ h1, h2, h3, h4, h5, h6 {
 .submit a {
     color: #379777 !important;
 }
+.guidelines-card-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 10% 0 10%;
+}
+.guidelines-card-section h2 {
+    font-size: 30px;
+    color: #16161A;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 20px 0px 30px 0px;
+    text-align: center;
+}
+.guidelines-card-section .card {
+    margin: auto;
+}
+.guidelines-card-section button {
+    background-color: #379777;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 14px;
+}
+.guidelines-card-section button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+.guidelines-card-section .card {
+    height: 200px;
+}
+.guidelines-card-section .card-body {
+    padding: 10px 16px 5px 22px;
+}
+.guidelines-card-section .card-title {
+    font-size: 16px;
+}
+.guidelines-card-section .card-text {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+.guidelines-card-section .paper-format-card img {
+    width: 40px;
+    height: auto;
+    margin: 20px 0px 0px 20px;
+}
+.guidelines-card-section .copyrights-card img {
+    width: 40px;
+    height: auto;
+    margin: 20px 0px 0px 20px;
+}
+.guidelines-card-section .undertaking-card img {
+    width: 40px;
+    height: auto;
+    margin: 20px 0px 0px 20px;
+}
 .download-button {
     display: flex;
     flex-direction: row;
@@ -1028,7 +1087,6 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 .download-button .btn:hover {
     transform: translateY(-5px);
