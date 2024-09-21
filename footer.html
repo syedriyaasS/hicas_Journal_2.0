@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .footer {
-            /* background-color: #7dac9d;
-            color: #343F52; */
+        /* .footer {
             background-color: #444444;
             color: #ebebeb ;
         }
@@ -98,11 +96,108 @@
         .copyrights {
             display: flex;
             justify-content: flex-end;
+        } */
+
+        .footer {
+        background-color: #23272b;
+        color: #ffffff;
+        padding: 50px 0px 0px 0px;
+        }
+
+        .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        }
+
+        .footer-section {
+        width: 23%;
+        min-width: 100px;
+        margin-bottom: 20px;
+        }
+        .footer-section img {
+            height: 70px;
+            width: auto;
+            border-radius: 7px;
+            margin: 0px 0px 10px 20px;
+        }
+        .footer-section h3, .footer-section h4 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        font-family: "Roboto", sans-serif;
+        }
+        .footer-section p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        font-family: "Roboto", sans-serif;
+        margin-left: 16px;
+        color: #CACACA;
+        }
+        .join-button:hover {
+        background-color: #cccccc;
+        }
+
+        .footer-section ul {
+        list-style: none;
+        padding: 0;
+        }
+
+        .footer-section ul li {
+        margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+        color: #CACACA;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        }
+        .footer-section ul li {
+            color: #CACACA;
+        }
+        .footer-section ul li a:hover {
+        color: #cccccc;
+        }
+        .footer-bottom {
+            margin-top: 30px;
+            border-top: 1px solid #A4AEC633;
+            text-align: center;
+            padding: 20px 0;
+            background-color: #23272b;
+        }
+
+        .footer-bottom p {
+        margin: 0;
+        font-size: 0.85rem;
+        color: #aaaaaa;
+        }
+
+        /* Responsive for mobile */
+        @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-section {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        .footer-section img {
+            margin-left: 0px;
+        }
+        .footer-section p {
+            margin-left: 0px;
+        }
+        .social-icons {
+            justify-content: center;
+        }
         }
     </style>
 </head>
 <body>
-    <section class="footer">
+    <!-- <section class="footer">
         <div class="container pt-5">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12 col-12 footer-about">
@@ -129,14 +224,51 @@
                 <div class="col-lg-3 col-md-6 col-sm-12 col-12 footer-contact">
                     <h4>CONTACT US</h4>
                     <ul>
-                    <li class="footer-mobile">Hotline <br><a href="tel:+911234567890">0422-4440555<br><span class="small">( Ext.-223 )</span></a></li>
-                    <li class="footer-mobile">Dr. S. Anuradha <br><a href="tel:+911234567890">+91 9865077940</a></li>
+                    <li class="footer-mobile">Hotline <br><a href="tel:04224440555">0422-4440555<br><span class="small">( Ext.-223 )</span></a></li>
+                    <li class="footer-mobile">Dr. S. Anuradha <br><a href="tel:+919865077940">+91 9865077940</a></li>
                     <li class="footer-mail"><a href="mailto:bluebellsoaps@gmail.com">hijomr@hicas.ac.in</a></li>
                     </ul>
                 </div>
                     <p class="copyrights">&copy; 2024 HIJOMR Hicas. All rights reserved</p>
             </div>
         </div>
+    </section> -->
+
+    <section class="footer" data-aos="fade-up">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>About us</h3>
+            <img src="./assets/img/hijomr-logo2-cropped.png" alt="">
+            <p>HIJOMR</p>
+          </div>
+      
+          <div class="footer-section">
+            <h4>Registration</h4>
+            <ul>
+              <li><a href="#">ISSN: A1B2-C3D4</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h4>Terms & Policies</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h4>Contact us</h4>
+            <ul>
+                <li>Hotline:<br><a href="tel:04224440555">0422-4440555 <span class="small">( Ext.-223 )</span></a></li>
+                <li>Dr. S. Anuradha: <br><a href="tel:+919865077940">+91 9865077940</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 HIJOMR Hicas. All rights reserved</p>
+        </div>
     </section>
+      
 </body>
 </html>
