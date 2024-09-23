@@ -7,46 +7,88 @@
     <title>HIJOMR</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <div class="logo">
-                    <a class="navbar-brand" href="#">
-                        <img src="./assets/img/HIJOMR-logo.png" alt="">
-                    </a>
+        <div id="hicas-header"></div>
+        <div class="nav-desktop">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <a class="navbar-brand" href="#">
+                            <img src="./assets/img/hijomr-logo2-cropped.png" alt="HIJOMR logo">
+                            <!-- <span><h4>HIJOMR</h4></span> -->
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./#">Current Issues</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./advisory-committee.html">Advisory Committee</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./editorial-board.html">Editorial Board</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./publication_ethics.html">Publication Ethics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./guidelines.html">Guidelines for Authors</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="./guidelines.html" class="btn nav-button">Submit Now</a>
+                    </div>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Adivisory Committee</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Editorial Board</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Publication Ethics</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Guidelines for Authors</a>
-                        </li>
-                    </ul>
+            </nav>
+        </div>
+        <div class="nav-mobile">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <a class="navbar-brand" href="#">
+                            <img src="./assets/img/hijomr-logo2-cropped.png" alt="HIJOMR logo">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./advisory-committee.html">Advisory Committee</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./editorial-board.html">Editorial Board</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./publication_ethics.html">Publication Ethics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./guidelines.html">Guidelines for Authors</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <a href="" class="btn nav-button">Submit Now</a>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
     <main>
         <div class="banner position-relative ">
@@ -54,19 +96,19 @@
                 <!-- Single Slider -->
                 <div class="align-items-center">
                     <div class="container">
-                        <div class="row">
+                        <div class="row banner-desktop">
                             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
                                 <div class="banner_captions">
                                     <div class="banner-top" data-animation="fadeInLeft" data-delay=".5s">
-                                        <div>
+                                        <!-- <div>
                                             <img class="hicas-logo" src="./assets/img/hicas logo file -02.png">
-                                        </div>
-                                        <div class="banner-text">
+                                        </div> -->
+                                        <!-- <div class="banner-text">
                                             <span data-animation="fadeInLeft" data-delay=".5s">
                                                 <div class="hicas-title-1">Hindusthan College of Arts & Science</div>
                                                 <div class="hicas-title-2">An Autonomous Institution</div>
                                             </span>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <h1 class="banner-title" data-animation="fadeInLeft" data-delay=".5s">Hindusthan
@@ -85,6 +127,26 @@
                             </div>
 
                         </div>
+                        <div class="row banner-mobile">
+                            <div class="col-xl-12 col-lg-8 col-md-12 col-sm-12">
+                                <div class="banner_captions">
+                                    <h1 class="banner-title" data-animation="fadeInLeft" data-delay=".5s">Hindusthan
+                                        International Journal of Multidisciplinary Research (HIJOMR)</h1>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <div class="mobile-banner-bottom">
+                                    <div class="banner-btns">
+                                        <a data-animation="fadeInLeft" data-delay=".5s" href="#"
+                                            class="btn banner-button" style="color: #379777 !important;">ISSN: A1B2-C3D4</a>
+                                    </div>
+                                    <div class="banner-book banner-book-mobile" data-animation="fadeInLeft" data-delay=".5s">
+                                        <img src="./assets/img/HIJOMR-3d-book-logo.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,7 +156,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                        <div class="dec-left">
+                        <div class="dec-left" data-aos="fade-right">
                             <div class="desc-title">
                                 <h2>Hindusthan International Journal of Multidisciplinary Research (HIJOMR)</h2>
                             </div>
@@ -120,36 +182,40 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
-                        <div class="card about-right-card-1">
-                            <div class="card-body">
-                                <h5 class="card-title">Original Research Papers</h5>
-                                <p class="card-text text-muted">Detailed studies with significant findings.</p>
-                                <a href="#" class="card-link">View</a>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="desc-right-section-first">
+                            <div class="card about-right-card-1" data-aos="fade-left">
+                                <div class="card-body">
+                                    <h5 class="card-title">Original Research Papers</h5>
+                                    <p class="card-text text-muted">Detailed studies with significant findings.</p>
+                                    <!-- <a href="#" class="card-link">View</a> -->
+                                </div>
                             </div>
-                        </div>
-                        <div class="card about-right-card-2">
-                            <div class="card-body">
-                                <h5 class="card-title">Case Studies</h5>
-                                <p class="card-text text-muted">Practical examinations of specific instances or
-                                    applications.</p>
-                                <a href="#" class="card-link">View</a>
+                            <div class="card about-right-card-2" data-aos="fade-left">
+                                <div class="card-body">
+                                    <h5 class="card-title">Case Studies</h5>
+                                    <p class="card-text text-muted">Practical examinations of specific instances or
+                                        applications.</p>
+                                    <!-- <a href="#" class="card-link">View</a> -->
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
-                        <div class="card about-right-card-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Articles</h5>
-                                <p class="card-text text-muted">Analytical and theoretical discussions.</p>
-                                <a href="#" class="card-link">View</a>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="desc-right-section-second">
+                            <div class="card about-right-card-3" data-aos="fade-left">
+                                <div class="card-body">
+                                    <h5 class="card-title">Articles</h5>
+                                    <p class="card-text text-muted">Analytical and theoretical discussions.</p>
+                                    <!-- <a href="#" class="card-link">View</a> -->
+                                </div>
                             </div>
-                        </div>
-                        <div class="card about-right-card-4">
-                            <div class="card-body">
-                                <h5 class="card-title">Bibliographical Work</h5>
-                                <p class="card-text text-muted">Comprehensive reviews of existing literature.</p>
-                                <a href="#" class="card-link">View</a>
+                            <div class="card about-right-card-4" data-aos="fade-left">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bibliographical Work</h5>
+                                    <p class="card-text text-muted">Comprehensive reviews of existing literature.</p>
+                                    <!-- <a href="#" class="card-link">View</a> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -159,106 +225,91 @@
         <section class="disciplines-covered-include mb-5">
             <div class="container">
                 <div class="disciplines-section">
-                    <h2>Disciplines covered</h2>
-                    <div class="row">
-                        <div class="col-4 disciplines-card card">
+                    <h2 data-aos="zoom-in">Disciplines covered</h2>
+                    <div class="row">                       
+                        <div class="col-lg-4 col-md-6 col-sm-12 disciplines-card card" data-aos="fade-right">
                             <div class="card-body">
                                 <div class="disciplines-icon">
-                                    <i class="fa-solid fa-group-arrows-rotate fa-2xl"></i>
-                                </div>                                
-                                <h4>Humanities</h4>
-                                <p>
-                                    Study of human culture, thought, and expression.
-                                </p>
-                                <a href="javascript:;" class="learn-more"
-                                    >Read More >></a
-                                >
-                            </div>
-                        </div>
-                        <div class="col-4 disciplines-card card">
-                            <div class="card-body">
-                                <div class="disciplines-icon">
-                                    <i class="fa-solid fa-people-group fa-2xl"></i>
-                                </div>                                
-                                <h4>Social Sciences</h4>
-                                <p>
-                                    Study of human society and social relationships.
-                                </p>
-                                <a href="javascript:;" class="learn-more"
-                                    >Read More >></a
-                                >
-                            </div>
-                        </div>
-                        <div class="col-4 disciplines-card card">
-                            <div class="card-body">
-                                <div class="disciplines-icon">
-                                    <i class="fa-solid fa-flask-vial fa-2xl"></i>
+                                    <i class="fa-solid fa-gears fa-2xl"></i>
                                 </div>
-                                <h4>Science</h4>
+                                <h4>Engineering</h4>
                                 <p>
-                                    Exploration of the natural world through observation and experimentation.
+                                    Civil, Mechanical, Electrical, Electronics, Chemical, Biotechnology, Industrial, Aeronautical, Automobile, Marine, Mechatronics, Robotics, Architectural, and Environmental Engineering.
                                 </p>
-                                <a href="javascript:;" class="learn-more"
-                                    >Read More >></a
-                                >
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4 disciplines-card card">
+                        <div class="col-lg-4 col-md-6 col-sm-12 disciplines-card card" data-aos="fade-up">
+                            <div class="card-body">
+                                <div class="disciplines-icon">
+                                    <i class="fa-solid fa-computer fa-2xl"></i>
+                                </div>                                
+                                <h4>Computer Science</h4>
+                                <p>
+                                    Computer Science, Computer Applications, Information Technology, Computer Technology, Data Science, Artificial Intelligence, and Machine Learning.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 disciplines-card card" data-aos="fade-left">
+                            <div class="card-body">
+                                <div class="disciplines-icon">
+                                    <i class="fa-solid fa-flask fa-2xl"></i>
+                                </div>                                
+                                <h4>Mathematical Science</h4>
+                                <p>
+                                    Mathematics, Physics, and Chemistry.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 disciplines-card card" data-aos="fade-right">
                             <div class="card-body">
                                 <div class="disciplines-icon">
                                     <i class="fa-solid fa-building-flag fa-2xl"></i>
                                 </div>                                
                                 <h4>Management</h4>
                                 <p>
-                                    Efficient organization and coordination of resources.
+                                    Commerce, Economics, Finance, Accounting, Corporate Governance, Human Resources Management, Marketing Management, Quality Management Training and Development.
                                 </p>
-                                <a href="javascript:;" class="learn-more"
-                                    >Read More >></a
-                                >
                             </div>
                         </div>
-                        <div class="col-4 disciplines-card card">
+                        <div class="col-lg-4 col-md-6 col-sm-12 disciplines-card card" data-aos="fade-up">
                             <div class="card-body">
                                 <div class="disciplines-icon">
-                                    <i class="fa-solid fa-money-bill-trend-up fa-2xl"></i>
+                                    <i class="fa-solid fa-group-arrows-rotate fa-2xl"></i>
                                 </div>
-                                <h4>Economics</h4>
+                                <h4>Social Science</h4>
                                 <p>
-                                    Production, distribution, and consumption of goods and services.
+                                    Humanities, Sociology, Education, Political Science, Law, Policy, Social Review, Arts, History, Philosophy, English.
                                 </p>
-                                <a href="javascript:;" class="learn-more"
-                                    >Read More >></a
-                                >
                             </div>
                         </div>
-                        <div class="col-4 disciplines-card card">
+                        <div class="col-lg-4 col-md-6 col-sm-12 disciplines-card card" data-aos="fade-left">
                             <div class="card-body">
                                 <div class="disciplines-icon">
-                                    <i class="fa-solid fa-gears fa-2xl"></i>
+                                    <i class="fa-solid fa-dna fa-2xl"></i>
                                 </div>                                
-                                <h4>Other Fields</h4>
+                                <h4>Life Science</h4>
                                 <p>
-                                    Other fields supporting high-level learning, teaching, and research.
+                                    Biochemistry, Microbiology, Food Science, Nutrition, Botany, and Zoology. 
                                 </p>
-                                <a href="javascript:;" class="learn-more"
-                                    >Read More >></a
-                                >
                             </div>
                         </div>
+                    </div>
+                    
+                    <div class="row">
+                        
                     </div>
                 </div>  
             </div>
         </section>
         <section class="readership">
             <div>
-                <h2>Readership</h2>
+                <h2 class="readership-desktop" data-aos="zoom-in">Readership</h2>
             </div>
             <div class="container readership-container">
+                <h2 class="readership-mobile" data-aos="zoom-in">Readership</h2>
                 <div class="disciplines-section">
                     <div class="row">
-                        <div class="col-4 readership-card card">
+                        <div class="col-4 readership-card card" data-aos="fade-right">
                             <div class="card-body">
                                 <div class="readership-icon">
                                     <i class="readership-icon-logo fa-solid fa-graduation-cap fa-2xl"></i>
@@ -267,12 +318,9 @@
                                 <p>
                                     Scholars advancing knowledge through research and teaching.
                                 </p>
-                                <a href="javascript:;" class="learn-more"
-                                    >Read More >></a
-                                >
                             </div>
                         </div>
-                        <div class="col-4 readership-card card">
+                        <div class="col-4 readership-card card" data-aos="fade-up">
                             <div class="card-body">
                                 <div class="readership-icon">
                                     <i class="readership-icon-logo fa-solid fa-people-group fa-2xl"></i>
@@ -281,12 +329,9 @@
                                 <p>
                                     Industry experts providing advice and solutions.
                                 </p>
-                                <a href="javascript:;" class="learn-more"
-                                    >Read More >></a
-                                >
                             </div>
                         </div>
-                        <div class="col-4 readership-card card">
+                        <div class="col-4 readership-card card" data-aos="fade-left">
                             <div class="card-body">
                                 <div class="readership-icon">
                                     <i class="readership-icon-logo fa-solid fa-user-shield fa-2xl"></i>
@@ -295,14 +340,11 @@
                                 <p>
                                     Decision-makers shaping strategic directions.
                                 </p>
-                                <a href="javascript:;" class="learn-more"
-                                    >Read More >></a
-                                >
                             </div>
                         </div>
                     </div>
                     <div class="row readership-row-2">
-                        <div class="col-6 readership-card card readership-bottom-card-1">
+                        <div class="col-6 readership-card card readership-bottom-card-1" data-aos="fade-right">
                             <div class="card-body">
                                 <div class="readership-icon">
                                     <i class="readership-icon-logo fa-solid fa-building-flag fa-2xl"></i>
@@ -311,12 +353,9 @@
                                 <p>
                                     Organizational leaders making strategic decisions.
                                 </p>
-                                <a href="javascript:;" class="learn-more"
-                                    >Read More >></a
-                                >
                             </div>
                         </div>
-                        <div class="col-6 readership-card card readership-bottom-card-2">
+                        <div class="col-6 readership-card card readership-bottom-card-2" data-aos="fade-left">
                             <div class="card-body">
                                 <div class="readership-icon">
                                     <i class="readership-icon-logo fa-regular fa-id-card fa-2xl"></i>
@@ -325,19 +364,16 @@
                                 <p>
                                     Professionals applying knowledge in real-world settings.
                                 </p>
-                                <a href="javascript:;" class="learn-more"
-                                    >Read More >></a
-                                >
                             </div>
                         </div>
                     </div>
                 </div>  
             </div>
         </section>
-        <section class="review-process">
+        <section class="review-process"  data-aos="fade-up">
             <div class="container">
                 <div>
-                    <h2>Review Process</h2>
+                    <h2 class="review-process-head" data-aos="zoom-in">Review Process</h2>
                 </div>
                 <div class="accordion accordion-flush review-process-accordion" id="accordionFlushExample">
                     <div class="accordion-item">
@@ -348,7 +384,7 @@
                       </h2>
                       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">Papers are screened by the editor for plagiarism and relevance. Papers
-                            with more than 10% plagiarism are <span class="text-danger">desk-rejected.</span></div>
+                            with less than 10% plagiarism are <span class="text-success">accepted.</span></div>
                       </div>
                     </div>
                     <div class="accordion-item">
@@ -368,44 +404,46 @@
         </section>
     </main>
     <footer>
-        <section class="footer">
-            <div class="container pt-5">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-12 footer-about">
-                        <h4>ABOUT US</h4>
-                        <div class="footer-brand">
-                            <img src="./assets/img/hijomr-logo2-cropped.png" alt="">
-                        </div>
-                        <div class="footer-brand-content">
-                        <h3>HIJOMR</h3>
-                        <p>Hindusthan International Journal of Multidisciplinary Research</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 footer-reg">
-                        <h4>REGISTRATION</h4>
-                        <p>ISSN: A1B2-C3D4</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 footer-terms">
-                        <h4 class="terms">TERMS & POLICIES</h4>
-                        <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-12 footer-contact">
-                        <h4>CONTACT US</h4>
-                        <ul>
-                        <li class="footer-mobile"><a href="tel:+911234567890">+91 1234567890</a></li>
-                        <li class="footer-mail"><a href="mailto:bluebellsoaps@gmail.com">hijomr@hicas.ac.in</a></li>
-                        </ul>
-                    </div>
-                        <p class="copyrights">&copy; 2024 HIJOMR Hicas. All rights reserved</p>
-                </div>
-            </div>
-        </section>
+        <div id="hicas-footer"></div>
     </footer>
     <!-- scripts -->
-    <script src="./assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var navbar = document.querySelector('.navbar');
+            var descSection = document.querySelector('.banner-btns');
+
+            window.addEventListener('scroll', function() {
+                var rect = descSection.getBoundingClientRect();
+                if (rect.top <= 0) {
+                    navbar.classList.add('sticky');
+                } else {
+                    navbar.classList.remove('sticky');
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var mobileNavbar = document.querySelector('.nav-mobile');
+            var descSection = document.querySelector('.desc');
+    
+            window.addEventListener('scroll', function() {
+                var rect = descSection.getBoundingClientRect();
+                if (rect.top <= 0) {
+                    mobileNavbar.classList.add('sticky');
+                } else {
+                    mobileNavbar.classList.remove('sticky');
+                }
+            });
+        });
+    </script>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/footer.js"></script>
+    <!-- <script src="./assets/js/script.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

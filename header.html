@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .college-header {
+            height: 100px;
+            width: 100%;
+            background-color: #ffffff;
+            color: #16161a;
+            border-bottom: 0.5px solid #cfe6df;
+        }
+        .clg-header-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 5px 0px;
+        }
+        .clg-header-content img{
+            height: 90px;
+            width: auto;
+        }
+        @media only screen and  (max-width: 600px) {
+            .clg-header-content {
+                overflow: hidden;
+            }
+            .college-header {
+                overflow-x: hidden;
+                height: 90px;
+            }
+            .clg-header-content img{
+                height: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="college-header">
+        <div class="container">
+            <div class="clg-header-content">
+                <div>
+                    <img src="./assets/img/hicas.logo.png" alt="">
+                </div>
+                <div>
+                    <img src="./assets/img/HICAS Banner.png" alt="">
+                </div>
+                <div>
+                    <img src="./assets/img/Academic Excellence copy.png" alt="">
+                </div>
+                <div>
+                    <img src="./assets/img/NAAC A++ Grade1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
