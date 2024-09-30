@@ -716,6 +716,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 30px;
 }
 .chief-editors-section {
+    padding: 15px 15px;
     overflow: hidden;
 }
 .chief-editors h2 {
@@ -859,7 +860,22 @@ h1, h2, h3, h4, h5, h6 {
 /* ---------------------------- */
 .board-members-section {
     margin-bottom: 50px;
+    padding: 15px 15px;
     overflow: hidden;
+}
+.board-members-section .card-last-left {
+    padding-left: 200px;
+}
+.board-members-section .card-last-right {
+    padding-right: 200px;
+}
+@media only screen and  (max-width: 1024px) {
+    .board-members-section .card-last-left {
+        padding-left: 0px;
+    }
+    .board-members-section .card-last-right {
+        padding-right: 0px;
+    }    
 }
 .board-members-card-section {
     margin-bottom: 30px;
