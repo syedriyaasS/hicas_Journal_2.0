@@ -696,6 +696,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     color: #fff;
     font-size: 50px;
     font-weight: 700;
@@ -1499,6 +1500,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: max-content;
 }
 .committee-members-card-section .card .profile-section h5 {
     color: #343f52;
@@ -1755,4 +1757,37 @@ h1, h2, h3, h4, h5, h6 {
     /* transform: translateY(-5px);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); */
     color: #ffffff;
+}
+@media only screen and  (max-width: 600px) {
+    .current-issues-card {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 23rem;
+        align-items: center;
+        padding: 10px 0px;
+    }
+    .current-issues-card:hover {
+        box-shadow: 0 0 15px 5px #0000000d;
+    }
+    .current-issues-card .card-body {
+        padding-top: 5px;
+        text-align: center;
+    }
+    .current-issues-card .card-body p {
+        padding-top: 0px !important;
+    }
+    .issue-card-journal-head {
+        margin-bottom: 10px;
+    }
+    .current-issues-designation {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .published-books button {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
