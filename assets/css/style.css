@@ -1628,3 +1628,131 @@ h1, h2, h3, h4, h5, h6 {
 .committee-members-last-card {
     padding: 0px 280px;
 }
+/* __________ */
+/* Current Issues page */
+.current-issues-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 330px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(90deg, rgba(55, 151, 119, 0.8) 21%, rgba(55, 151, 119, 0.8) 21%), url(../img/books-shelf-cropped.jpg);
+    /* background-image: linear-gradient(90deg, rgba(55, 151, 119, 0.8) 21%, rgba(55, 151, 119, 0.8) 21%), url(../img/current_issues_mockup_book-cropped2.png); */
+}
+.current-issues-banner-title {
+    
+}
+.current-issues-banner-title h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+}
+@media only screen and  (max-width: 600px) {
+    .current-issues-banner {
+        height: 164px !important;
+    }
+    .current-issues-banner-title h2 {
+        font-size: 35px;
+    }
+}
+.chief-editors-section {
+    padding: 15px 15px;
+    overflow: hidden;
+}
+.chief-editors h2 {
+    font-size: 30px;
+    color: #16161A;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 65px 0px 45px 0px;
+    text-align: center;
+}
+.published-books {
+    margin: 100px 0px;
+}
+.current-issues-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.current-issues-card {
+    display: flex;
+    flex-direction: row;
+    border: none; 
+    width: 38rem;
+    height: 300px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 5px #0000000d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.current-issues-card:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.current-issues-left {
+    margin-left: 0px !important;
+}
+.current-issues-right {
+    margin-right: 0px;
+}
+.current-issues-card img {
+    height: 300px;
+    width: auto;
+    padding: 10px 10px;
+    margin: auto;
+    border-radius: 20px;
+}
+.current-issues-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 20px 40px 20px;
+}
+.issue-card-journal-head {
+    color: #64676c !important;
+}
+.current-issues-designation {
+    margin-top: 5px;
+    padding-top: 5px !important;
+    background-color: #cfe6df;
+    color: #379777;
+    padding: 5px 5px 5px 5px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 8px;
+    width: fit-content;
+}
+.current-issues-card .card-title {
+    color: #343f52;
+}
+.current-issues-card .bio {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.current-issues-card .card-body p {
+    font-size: smaller !important;
+    color: #64676c;
+}
+.published-books button {
+    background-color: #379777;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    font-size: 14px;
+    width: 130px;
+}
+.published-books button:hover {
+    /* transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); */
+    color: #ffffff;
+}
