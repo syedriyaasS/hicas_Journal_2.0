@@ -84,7 +84,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">Current Issues</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Guidelines for Authors</a>
+                                <a class="nav-link" aria-current="page" href="./guidelines.html">Guidelines for Authors</a>
                             </li>
                         </ul>
                     </div>
@@ -120,7 +120,7 @@
                                             <h5 class="card-title" style="font-size: 19.5px;">Volume : 1 &nbsp Issue : 1 <span><h5 class="card-text current-issues-designation">September 2024</h5></span></h5>
                                         </div>
                                         <!-- <a href="#" class="btn btn-primary">View Publication</a> -->
-                                        <button type="button" class="btn" onclick="downloadVolume1Issue()">View Publication</button>
+                                        <button type="button" class="btn" onclick="downloadVolume1Issue1()">View Publication</button>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +167,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var mobileNavbar = document.querySelector('.nav-mobile');
-            var descSection = document.querySelector('.guidelines-banner-title');
+            var descSection = document.querySelector('.current-issues-banner-title');
     
             window.addEventListener('scroll', function() {
                 var rect = descSection.getBoundingClientRect();
@@ -182,7 +182,7 @@
      <script>
         function downloadVolume1Issue1() {
             const link = document.createElement('a');
-            link.href = './assets/book/book-files/HIJOMR SEP 2024 VOL 1 ISSUE 1.pdf';
+            link.href = './assets/book/book-files/1 HIJOMR -HICAS SEP 2024 VOL 1 ISSUE 1.pdf';
             link.download = 'HIJOMR SEP 2024 VOL 1 ISSUE 1.pdf';
             link.click();
         }

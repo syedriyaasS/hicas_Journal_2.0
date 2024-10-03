@@ -458,8 +458,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 @media (min-width: 601px) and (max-width: 1020px) {
-    .disciplines-section {
-        
+    .disciplines-section .row{
+        display: flex;
+        flex-direction: column;
     }
 }
 /* Readership section */
@@ -1341,6 +1342,14 @@ h1, h2, h3, h4, h5, h6 {
 .submit a {
     color: #379777 !important;
 }
+@media (min-width: 601px) and (max-width: 1020px) {
+    .desktop-pdf-head {
+        display: none;
+    }
+    .pdf {
+        display: none;
+    }
+}
 @media only screen and  (max-width: 600px) {
     .pdf {
         display: none;
@@ -1539,6 +1548,14 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 10px;
     }
 }
+@media (min-width: 601px) and (max-width: 1020px) {
+    .committee-members-card-section .card {
+        width: 400px;
+    }
+    .committee-members-last-card {
+        padding: 0px 20px !important;
+    }
+}
 /* .board-members-card-profile {
     display: flex;
     margin: auto;
@@ -1635,6 +1652,11 @@ h1, h2, h3, h4, h5, h6 {
 .committee-members-last-card {
     padding: 0px 280px;
 }
+@media only screen and  (min-width: 1300px) {
+    .committee-members-last-card {
+        padding: 0px 10px !important;
+    }
+}
 /* __________ */
 /* Current Issues page */
 .current-issues-banner {
@@ -1711,7 +1733,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0px;
 }
 .current-issues-card img {
-    height: 300px;
+    height: 200px;
     width: auto;
     padding: 10px 10px;
     margin: auto;
